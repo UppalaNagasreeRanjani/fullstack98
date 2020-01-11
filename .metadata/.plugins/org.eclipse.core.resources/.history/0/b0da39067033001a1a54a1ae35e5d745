@@ -1,0 +1,24 @@
+package com.NewProject;
+
+public class Concrete {
+	public static  void main(String[] args) {
+Ce c=new Ce() {
+@Override
+public void display(){
+	System.out.println("iiiiiiii");
+}
+};
+
+c.display();
+}
+	
+}
+
+interface Ce{
+
+
+	 public void display() ;
+		//System.out.println("hi");
+		
+	}
+	

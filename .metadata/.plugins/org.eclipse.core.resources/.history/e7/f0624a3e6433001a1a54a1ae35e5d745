@@ -1,0 +1,18 @@
+package com.NewProject;
+
+public class Concrete {
+	public static  void main(String[] args) {
+C c=new C() {
+@Override
+public void display(){
+	System.out.println("iiiiiiii");
+}
+};
+}
+
+class C{
+	public void display() {
+		System.out.println("hi");
+		
+	}
+}

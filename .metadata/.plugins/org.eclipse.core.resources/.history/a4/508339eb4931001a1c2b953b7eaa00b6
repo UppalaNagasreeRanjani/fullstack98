@@ -1,0 +1,30 @@
+package loops;
+
+import java.util.*;
+
+public class Tv {
+	public static void main(String[] args) {
+		String tv;
+		int d, size, sp;
+		Scanner s = new Scanner(System.in);
+		
+		tv = s.nextLine();
+		sp = s.nextInt();
+		size = s.nextInt();
+		if (tv.equals("crt")) {
+			d = (5 / 100) * sp;
+			System.out.println("discount" + d);
+
+		} else if (tv.equals("Lcd")) {
+			if (size == 14) {
+				d = (8 / 100) * sp;
+				System.out.println("discount" + d);
+			} else if (size == 21) {
+				d = (10 / 100) * sp;
+				System.out.println("discount" + d);
+			}
+		}
+
+	}
+
+}

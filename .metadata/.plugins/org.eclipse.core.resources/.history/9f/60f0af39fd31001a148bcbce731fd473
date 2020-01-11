@@ -1,0 +1,14 @@
+package inheritence;
+
+public class Final {
+	public static void main(String[] args) {
+		public final double PI;
+		Aa a=new Aa();
+		
+	}
+}
+
+class Aa{
+	public final double PI=1234.73627;
+	System.out.println(PI);
+}

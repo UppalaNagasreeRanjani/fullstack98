@@ -1,0 +1,20 @@
+package com.NewProject;
+
+import java.util.PriorityQueue;
+
+public class Setone {
+	public static void main(String[] args) {
+		PriorityQueue<String>pt=new PriorityQueue<String>();
+		pt.add("hi");
+		pt.add("hello");
+		pt.add("strin");
+		System.out.println(pt);
+		for(String s:pt) {
+			System.out.println(s);
+		}
+		System.out.println(pt.poll());
+		
+		
+	}
+
+}

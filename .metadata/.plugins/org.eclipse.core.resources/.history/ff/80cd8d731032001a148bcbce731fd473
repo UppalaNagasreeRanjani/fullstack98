@@ -1,0 +1,25 @@
+package inheritence;
+
+import java.util.Scanner;
+
+public class Neww {
+public static void main(String[] args) {
+	int a[],size,f,l,i,sum=0;
+	Scanner s=new Scanner(System.in);
+	//f=s.nextInt();
+	//l=s.nextInt();
+	size=s.nextInt();
+	a=new int[size];
+	for(i=0;i<size;i++) {
+		a[i]=s.nextInt();
+		sum=sum+a[i];
+		System.out.println(sum);
+		}
+	
+	
+	
+	
+	
+	
+}
+}

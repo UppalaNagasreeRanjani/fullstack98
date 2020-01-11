@@ -1,0 +1,9 @@
+package com.NewProject;
+
+public class String {
+	public static void main(String[] args) {
+		String name="naga";
+		
+	}
+
+}

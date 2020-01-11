@@ -1,0 +1,17 @@
+package com.NewProject;
+
+public class Concrete {
+	public static  void main(String[] args) {
+C c=new C();
+@ovveride
+public void display(){
+	System.out.println("hi");
+}
+}
+}
+class C{
+	public void display() {
+		System.out.println("hi");
+		
+	}
+}

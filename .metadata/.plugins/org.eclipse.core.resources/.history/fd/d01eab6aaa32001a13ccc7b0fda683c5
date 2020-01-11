@@ -1,0 +1,10 @@
+package com.NewProject;
+
+public class NewOne {
+	public static void main(String[] args) {
+		String name="naga";
+		System.out.println(name);
+		
+	}
+
+}

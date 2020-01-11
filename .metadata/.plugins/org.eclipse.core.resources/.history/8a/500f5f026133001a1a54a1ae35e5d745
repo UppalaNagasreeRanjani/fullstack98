@@ -1,0 +1,18 @@
+package com.NewProject;
+
+public class Ex1 {
+public static void main(String[] args) {
+	A a=new A();
+	A.B b=a.new B();
+	
+}
+}
+
+class A{
+	int x=10,y=20;
+	class B{
+		System.out.println(x);
+		System.out.println(y);
+		
+	}
+}

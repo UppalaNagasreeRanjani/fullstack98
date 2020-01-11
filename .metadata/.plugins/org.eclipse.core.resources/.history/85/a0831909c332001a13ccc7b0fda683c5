@@ -1,0 +1,10 @@
+package com.NewProject;
+
+public class Practise {
+	public static void main(String[] args) {
+		String name="global warming";
+		name.substring(10);
+		
+	}
+
+}

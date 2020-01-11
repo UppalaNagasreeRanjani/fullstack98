@@ -1,0 +1,39 @@
+package inheritence;
+
+import java.util.Scanner;
+
+public class Inheritence1 {
+public static void main(String[] args) {
+	emp e=new Department();
+	e.getData();
+	e.display();
+	
+}
+}
+public class Emp{
+	int id;
+	String name;
+	string lname;
+	public void getData()
+	{
+		Scanner s=new Scanner(System.in);
+		//System.out.println("enter id");
+		id=s.nextInt();
+		name=s.nextLine();
+		lname=s.nextLine();
+		
+	}
+	public void display()
+	{
+		System.out.println(+id" "+name"" +lname);
+		
+	}
+}
+public class Department extends Emp{
+	string dname;
+}
+public class Module extends Emp{
+	string mname;
+}
+
+

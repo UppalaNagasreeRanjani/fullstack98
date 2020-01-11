@@ -1,0 +1,39 @@
+package com.cts.activity.main;
+
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.cts.activity.bean.Employee;
+import com.cts.activity.dao.EmployeeDAO;
+import com.cts.activity.daoimpl.EmployeeDAOImpl;
+
+
+public class EmployeeMain {
+
+	public static void main(String[] args)throws ClassNotFoundException,SQLException  {
+		Class.forName("com.mysql.jdbc.Driver");//database driver class
+		String url="jdbc:mysql://localhost:3306/cts";//database url
+		String username="root";//username
+		String password="admin";//password
+		Connection conn=DriverManager.getConnection(url,username,password);//connection tothe database
+		Statement stmt=conn.createStatement();
+		String query="insert into emp values(101,'nagasri','chennai',45678)" ;
+		System.out.println("connection established");
+		int result=stmt.executeUpdate(query);
+		if(result>0) {
+			System.out.println("data inserted");
+		}
+		else
+		{
+			System.out.println("try again later");
+			
+		}
+	}
+}
+
+		
+		

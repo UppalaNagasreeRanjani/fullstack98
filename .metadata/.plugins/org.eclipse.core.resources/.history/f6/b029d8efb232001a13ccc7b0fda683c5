@@ -1,0 +1,12 @@
+package com.NewProject;
+
+public class Stringbuffer {
+	public static void main(String[] args)
+
+	{
+		Stringbuffer sb=new Stringbuffer();
+		System.out.println(sb.capacity());
+		
+		
+	}
+}

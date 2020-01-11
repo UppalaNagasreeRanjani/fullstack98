@@ -1,0 +1,18 @@
+package loops;
+
+import java.util.Scanner;
+
+public class reverse {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int arr[];
+		arr=new int[5];
+		System.out.println("enter the elements into array");
+		for(int i=0;i<=3;i++)
+			arr=s.hasNextInt();
+		System.out.println(" the elements in the array are"+arr[i]);
+		
+		
+	}
+
+}

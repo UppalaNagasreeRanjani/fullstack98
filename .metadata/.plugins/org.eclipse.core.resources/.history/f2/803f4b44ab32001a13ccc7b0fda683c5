@@ -1,0 +1,17 @@
+package com.NewProject;
+
+public class NewOne {
+	public static void main(String[] args) {
+		String name="naga";
+		String name1="naga";
+		String add="neht";
+		System.out.println(name+name1);
+		add=name+name1;
+		System.out.println(add);
+		System.out.println(name.equals(String.name1));
+		
+		
+		
+	}
+
+}

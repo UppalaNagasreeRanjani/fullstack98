@@ -1,0 +1,24 @@
+package com.NewProject;
+
+public class Excep
+{
+	public static void main(String[] args) {
+	 
+			try {
+		
+			throw new NullPointerException("exception");
+	
+		int a=Integer.parseInt(args[0]);
+		int b=10/(b-a);
+		System.out.println(b);
+		String name="sri";
+		name=null;
+		System.out.println(name);
+		}
+			catch(NullPointerException e) {
+				System.out.println("exception raised");
+			}
+	}
+	
+	
+}

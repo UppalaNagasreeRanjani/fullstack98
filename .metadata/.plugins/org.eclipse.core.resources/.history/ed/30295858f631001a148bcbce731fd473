@@ -1,0 +1,76 @@
+package inheritence;
+
+import java.util.Scanner;
+
+public class Excersize {
+public static void main(String[] args) {
+	int n;
+	Scanner s2=new Scanner(System.in);
+	n=s2.nextInt();
+	Steve st=new Steve();
+	switch(n){
+	case 1:st.getData();
+	         st.display();
+	         break;
+	case 2:st.getData();
+	        st.display();
+	        break;
+	  default:System.out.println("invalid ");
+	  
+		}
+	
+	
+	
+	
+}
+}
+class Steve{
+	String fname;
+	String lname;
+	int age;
+	String courseName;
+	int stuId;
+	public void getData()
+	{
+		Scanner s=new Scanner(System.in);
+		fname=s.nextLine();
+		lname=s.nextLine();
+		age=s.nextInt();
+		courseName=s.nextLine();
+		stuId=s.nextInt();
+		
+	}
+	public void display()
+	{
+		System.out.println(fname+lname+age+courseName+stuId);
+		
+	}
+	
+}
+class Employee extends Steve{
+	String fname;
+	String lname;
+	int age;
+	long sal;
+	String depName;
+	String designation;
+	int empId;
+	public void getData()
+	{
+		Scanner s1=new Scanner(System.in);
+		fname=s1.nextLine();
+		lname=s1.nextLine();
+		age=s1.nextInt();
+		sal=s1.nextInt();
+		depName=s1.nextLine();
+		designation=s1.nextLine();
+		empId=s1.nextInt();
+	}
+	public void display()
+	{
+		System.out.println(fname+lname+age+sal+depName+designation+empId);
+		
+	}
+	
+	
+}

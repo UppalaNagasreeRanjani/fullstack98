@@ -1,0 +1,9 @@
+package com.NewProject;
+
+public class NewOne {
+	public static void main(NewOne[] args) {
+		NewOne name="naga";
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package loops;
+
+import java.util.Scanner;
+
+
+public class Positive {
+	publi static void main(String[] args) {
+		int n;
+		Scanner s=new Scanner(System.in);
+				n=s.nextInt();
+		if(n>0) {
+			System.out.println("positive");
+			else 
+				System.out.println("negative");	
+		}
+	}
+
+
+}

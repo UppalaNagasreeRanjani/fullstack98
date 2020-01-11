@@ -1,0 +1,14 @@
+package com.NewProject;
+
+import java.util.HashMap;
+
+public class Hsh {
+	public static void main(String[] args) {
+		HashMap<String,Integer>map=new HashMap<String, Integer>();
+		map.put("nam", 98);
+		System.out.println(map);
+		
+		
+	}
+
+}

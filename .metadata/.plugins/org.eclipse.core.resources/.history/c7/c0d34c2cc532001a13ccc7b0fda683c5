@@ -1,0 +1,12 @@
+package com.NewProject;
+
+public class Practise {
+	public static void main(String[] args) {
+		String name="Global Warming";
+		System.out.println(name.substring(10));
+		System.out.println(name.substring(4,8));
+		System.out.println(name.trim());
+		System.out.println(name.indexOf("Wa"));
+	}
+
+}
