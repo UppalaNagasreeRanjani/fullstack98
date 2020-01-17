@@ -12,11 +12,33 @@
 <label for=""> name</label>
     <input type="text" id="name"><br>
     <label for=""> password</label>
-    <input type="password" id="password">
-          <input type="button" value="login">
+    <input type="password" id="password"><br>
+    <label for=""> gender</label>
+    <input type="text" id="gender" >
+          <input type="button" value="login" onclick="gender()">
 
 
     </form>
-    
+
+  <script>
+      function  display()
+      {
+       
+        var name=document.getElementById("name").value;
+
+var password=document.getElementById("password").value;
+alert("username="+name+ " password="+password);
+      }
+
+      function gender(){
+          alert("hello");
+          var gender=document.getElementById("gender").value;
+          if(gender=="male"){
+              alert("you are a boy");
+          } else{
+            alert("you are a girl"); 
+          }
+      }
+  </script>  
 </body>
 </html>
