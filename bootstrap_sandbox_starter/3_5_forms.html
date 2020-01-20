@@ -87,113 +87,88 @@
     <div class="container">
         <!--##################START HERE#####################-->
 
+        
         <!-- FORM -->
-        <form>
-            <!-- TEXT FIELD GROUPS -->
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter name">
+        <div class="input-group">
+            <div class="input-group-append">
+                <span class="input-group-text">@</span>
             </div>
-            <div>
-                <label for="email">Email address</label>
-                <input type="email" id="email" placeholder="Enter email">
-            </div>
-            <div>
-                <label for="company">Company</label>
-                <input type="text" id="company" placeholder="Enter company name">
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password">
-            </div>
-            <!-- SELECT -->
-            <div>
-                <label for="gender">Gender</label>
-                <select id="gender">
-                    <option>Male</option>
-                    <option>Female</option>
-                </select>
-            </div>
-            <!-- TEXTAREA -->
-            <div>
-                <label for="message">Message</label>
-                <textarea id="message" rows="3"></textarea>
-            </div>
-            <!-- FILE INPUT -->
-            <div>
-                <label for="file">File input</label>
-                <input type="file" id="file">
-                <small id="fileHelp">Max 3mb size</small>
-            </div>
-            <!-- CUSTOM FILE INPUT -->
-            <div>
-                <input type="file" id="myfile">
-                <label for="myfile">Choose file</label>
-            </div>
-            <br>
-            <br>
-            <!-- RANGE -->
-            <div>
-                <label for="membership">Membership Level</label>
-                <input type="range">
-            </div>
-
-            <br>
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <br>
-        <br>
-
-        <!-- INLINE FORM -->
-        <form>
-            <input type="text" id="username" placeholder="Enter username">
-            <input type="text" id="password" placeholder="Password">
-            <div>
-                <label>
-                    <input type="checkbox"> Remember me
-                </label>
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <br>
-        <br>
-
-        <!-- FORM ROW -->
-        <form>
-            <div>
-                <div>
-                    <input type="text" placeholder="First name">
-                </div>
-                <div>
-                    <input type="text" placeholder="Last name">
-                </div>
-            </div>
-        </form>
-
-        <br>
-        <br>
-
-        <!-- VALIDATION -->
-        <div>
-            <label for="username">Username</label>
-            <input type="text" id="username">
+            <input class="form-control" type="text" placeholder="Username">
         </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="text" id="password">
-            <div>
-                Password not strong enough
+
+        <br>
+
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Username">
+            <div class="input-group-append">
+                <span class="input-group-text">@something.com</span>
             </div>
         </div>
-        <div>
-            <label for="password2">Confirm Password</label>
-            <input type="text" id="password2">
-            <div>
-                Password does not match
+
+        <br>
+
+        <label for="basic-url">Custom URL</label>
+        <div class="input-group">
+            <div class="input-group-append">
+                <span class="input-group-text">https://something.com/member/</span>
+            </div>
+            <input class="form-control" type="text">
+        </div>
+
+        <br>
+
+        <div class="input-group">
+            <div class="input-group-append">
+                <span class="input-group-text">$</span>
+            </div>
+            <input class="form-control" type="text">
+            <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- CHECKBOX -->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input class="form-control" type="checkbox">
+                </div>
+            </div>
+            <input class="form-control" type="text">
+        </div>
+
+        <br>
+
+        <!-- RADIO -->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input class="form-control" type="radio">
+                </div>
+            </div>
+            <input class="form-control" type="text">
+        </div c>
+
+        <br>
+
+        <!-- MULTIPLE INPUTS -->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Name & Email</span>
+            </div>
+            <input class="form-control" type="text" placeholder="Full Name">
+            <input class="form-control" type="email" placeholder="Email">
+        </div c>
+
+        <br>
+
+        <!-- BUTTON ADDONS -->
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Find By Name...">
+            <div class="input-group-append">
+                <button class="btn btn-outline-info form-control" type="button">Search</button>
             </div>
         </div>
 
