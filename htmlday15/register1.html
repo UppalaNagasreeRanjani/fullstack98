@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>register</title>
+    
+</head>
+<body><form action="">
+
+    <label for=""> name</label>
+<input type="name" id="enter name"><br>
+<label for="">
+    password
+</label>
+<input type="password" id="enter password"><br>
+<label for=""> retype password</label>
+<input type="password" id="reenter password">  <br>
+<input type="button" value="submit" onclick="register()">
+<input type="button" value="cancel">
+
+  </form>
+  <script>function register() {
+    if(typeof(Storage) !== "undefined") {
+      if (localStorage.name) {
+        localStorage.name = document.getElementById("name");
+      } 
+      else {
+        localStorage.name = "null";
+       }
+       }
+       else
+        {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+  }
+</script>
+    
+</body>
+</html>
