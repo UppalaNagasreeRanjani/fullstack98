@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div contenteditable=true>hello</div>
+     <p> hi</p>
+    <p> hello</p>
+    <div><strong>how are you </strong></div>
+    <div> first </div>
+    <p> hi nagasri</p>
+    
+    <button onclick=foo>Alert</button>
+
+    <table></table>
+
+    <script> 
+    var firstDIV=document.querySelector('div')
+    firstDIV.style.color="red";
+    firstDIV.style.fontSize="50px";
+    var d = document.querySelector('div');
+var n = document.createElement('strong');
+n.textContent = 'nagasri how are you';
+var strong=document.querySelector('strong')
+d.insertBefore(n, strong);
+var copy = strong.cloneNode(true);
+ //d.replaceChild(n,strong);
+
+//removeChild(strong);
+//replacechild(ne,strong);
+//div.appendChild(strong);
+
+    var first=document.querySelectorAll('p')
+    for(let s of first){
+        s.style.fontSize="20px";
+        s.style.color="blue";
+    }
+    var btn = document.querySelector('button');
+btn.onclick=foo;
+var btn = document.querySelector('button');
+btn.addEventListener('click', foo);
+btn.removeEventListener('click',foo);
+
+function foo(){
+    alert ("hi");
+} 
+
+
+    
+
+
+    var table = document.querySelector("table");
+var df = document.createDocumentFragment();
+ 
+for(var i=0; i<5; i++) {
+  var td = document.createElement("td");
+  var tr = document.createElement("tr");
+  td.textContent = i;
+  tr.appendChild(td)
+  df.appendChild(tr);
+}
+ 
+table.appendChild(df);
+var style = getComputedStyle(document.querySelector('div'));
+alert(style.width);//get the size
+var div = document.querySelector('div');
+div.setAttribute('contenteditable', '')
+div.removeAttribute('contenteditable');
+</script>
+</body>
+</html>

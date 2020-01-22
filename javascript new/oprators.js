@@ -10,3 +10,7 @@ var c=a>b?"big":"small";//conditional
 console.log(c);
 var c=true
 console.log(typeof c);//typr of variablrs
+/*function add(a,b){
+return a+b
+}
+add(a=5,b=2)
