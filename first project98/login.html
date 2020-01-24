@@ -5,31 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>login page</title>
+    <style>
+        
+        table ,td,tr{
+            
+            color: blue;
+        }
+
+        
+    </style>
 </head>
-<body>
+<body bgcolor="lightgreen">
+    <marquee><b style="color: red;"> This is login page ...pleace enter your details</b></marquee>
     <form action="">
-<h1 class="h1"> LoginForm</h1>
-<label for=""> EmailId</label>
-    <input type="text" id="name"><br>
-    <label for="">Password </label>
-    <input type="password" id="password"><br>
-   
-          <input type="button" value="login" onclick="display()">
-          <input type="button" value="reset" > 
-          <input type="button" value="cancel">
+        <h1 align="center">LOGIN FORM</h1>
+        <table border="1" cellpadding="30" cellspacing="1" height="300" width="350" align="center" >
+            <tr>
+            <td> EmailId:<input type="text" id="name" placeholder="@gmail.com"></td>
+            </tr>
+            <tr>
+                <td> Password:<input type="password" id="password"placeholder="enter password"> </td></tr>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="login">
+                                <input type="reset" value="reset" > <br><br>
+                                <a href="reset.html"><u>forgotpassword</u></a>
+
+                             </td>
+        
+            </tr>
+        </table>
 
 
     </form>
 
-  <script>
-      function  display()
-      {
-       
-        var name=document.getElementById("name").value;
-
-var password=document.getElementById("password").value;
-alert("username="+name+ " password="+password);
-      } 
-  </script>  
-</body>
+  
+     </body>
 </html>

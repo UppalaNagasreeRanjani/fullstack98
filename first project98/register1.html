@@ -3,39 +3,33 @@
 <head>
     
     <title>register</title>
+    <style>
+    table,td{
+      color:blue;
+    }
+    </style>
     
 </head>
-<body><form action="">
-<h1 class="h1">  Register Form</h1>
+<body bgcolor="lightgreen"><form action="">
+<h1 class="h1" align="center"> <b> Registration Form</b></h1>
+<table border="1" cellpadding="30" cellspacing="1" height="300" width="350" align="center" >
+  <tr><td>
     <label for=""> email</label>
-<input type="name" id="enter name"><br>
-<label for="">
+<input type="text" placeholder="@gmail.com"></td></tr>
+<tr><td><label for="">
     password
 </label>
-<input type="password" id="enter password"><br>
-<label for=""> retype password</label>
-<input type="password" id="reenter password">  <br>
-<label for="">confirm email</label>
-<input type="name" id="enter name"><br>
-<input type="button" value="submit" onclick="register()">
-<input type="button" value="reset">
+<input type="password" id="enter password"placeholder="enter password"></td></tr>
+<tr><td><label for=""> retype password</label>
+<input type="password" id="reenter password"placeholder="re enter password"> </td></tr>
+<tr>><td><label for="">confirm email</label>
+<input type="text" placeholder="enter OTP"></td></tr>
+<tr><td><input type="button" value="submit">
+<input type="reset" value="reset">
+<input type="button" value="cancel"></td></tr>
 
   </form>
-  <script>function register() {
-    if(typeof(Storage) !== "undefined") {
-      if (localStorage.name) {
-        localStorage.name = document.getElementById("name");
-      } 
-      else {
-        localStorage.name = "null";
-       }
-       }
-       else
-        {
-      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-  }
-</script>
+  
     
 </body>
 </html>
