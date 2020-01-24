@@ -29,10 +29,10 @@
   </div>
 <div> {{user.name}}</div>
 </div> -->
-<h2>My Heroes</h2>
-<ul class="heroes">
-  <li>
-    
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
-</ul>
+<!-- <app-child [messageFromParent]="message"></app-child> -->
+<app-child (ChildMessage)="setMessage($event)">
+
+</app-child>
+{{messagefromChild}}
+<p appRed>Hello This is Red</p>
+<app-form></app-form>

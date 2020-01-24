@@ -1,22 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule}from '@angular/forms';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChildComponent } from './child/child.component';
-import { RedDirective } from './red.directive';
-import { FormComponent } from './form/form.component';
+import { RegisterComponent } from './admin/register/register.component';
+import { HomeComponent } from './home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ChildComponent,
-    RedDirective,
-    FormComponent
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
