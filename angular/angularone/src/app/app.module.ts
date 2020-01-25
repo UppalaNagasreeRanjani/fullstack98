@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ChildComponent } from './child/child.component';
 import { RedDirective } from './red.directive';
 import { FormComponent } from './form/form.component';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponent,
     RedDirective,
-    FormComponent
+    FormComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
