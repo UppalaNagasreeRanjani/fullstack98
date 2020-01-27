@@ -1,9 +1,0 @@
-package com.NewProject;
-
-public class String {
-	public static void main(NewOne[] args) {
-		NewOne name="naga";
-		
-	}
-
-}
