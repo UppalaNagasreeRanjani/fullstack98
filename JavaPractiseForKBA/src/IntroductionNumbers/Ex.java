@@ -1,16 +1,23 @@
 package IntroductionNumbers;
 
-public class Ex {
+ class Ex {
+	
+public void display() throws Exception {
+	System.out.println("hi");
+	
+}
+ }
+class B extends Ex{
+	public void display() throws ArithmeticException{
+		System.out.println("hi");
+	}
 	public static void main(String[] args) {
-		
-	
-	
-String name=" hello";
+		B b =new B();
+		b.display();
+	}
+	}
 
-System.out.println(name.substring(4,5));
-System.out.println(name.substring(3,4));
-System.out.println(name.substring(2,3));
-System.out.println(name.substring(0));
 
-}
-}
+
+
+
