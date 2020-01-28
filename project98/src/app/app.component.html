@@ -1,20 +1,61 @@
 <html>
   <head>
     <title>Landing Page</title>
+    
     </head>
 <body>
-  <div id="topnav" style="float:left;width: 840px; height: 20px; word-spacing: 50px; font-size: 90%; padding-left:60px; padding-top: 20px; white-space: nowrap; text-align:left; background-color:lightcoral;">
-   <nav class="navbar navbar-expand-md navbar-light bg-dark">
+  
+   <nav class="navbar navbar-expand-md navbar-green bg-dark fixed-top">
     
+<div class="container-fluid">
+  
+  <a href="#">Home</a>
+    
+  <div class="collapse navbar-collapse">
+      
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item"><a class="nav-link" routerLink="aboutus">AboutUs</a>
+    <li class="nav-item"><a class="nav-link" routerLink="login" >Login</a></li>
+     <li class="nav-item"><a class="nav-link" routerLink="register">Register</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="logout">logout</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="admin">AdminPage</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="user">User</a></li>
+              </ul>
+        </div>
+    </div>
+</nav>
 
-      <a href="#">Home</a>|
-      <a routerLink="aboutus">AboutUs</a>
-      <a routerLink="login" >Login</a>
-      <a routerLink="register">Register</a> 
-      <a routerLink="logout">logout</a>
-      <a routerLink="admin">AdminPage</a>
-      <a routerLink="user">User</a>
-  </nav>
-</div>
+<div id="header" class="header">
+  <div class="row">
+    <div class="col-lg-6 col-mg-6">
+      
+      <h4> <b><u> Stock Market:</u></b></h4>
+      <p>
+        Stock market is a place where people buy/sell shares of publicly listed companies.<br>
+         It offers a platform to facilitate seamless exchange of shares.
+          <br>In simple terms, if A wants to sell shares of Reliance Industries,<br> the stock market will help him to meet the seller who is willing to buy Reliance Industries. <br>
+          However, it is important to note that a person can trade in the stock market only through a registered intermediary known as a stock broker. 
+          The buying and selling of shares take place through electronic medium. We will discuss more about the stock brokers at a later point.
+         <br></p>
+         <h4><b><u>Stock Exchanges in India:</u></b></h4>
+         <p>There are two main stock exchanges in India where majority of the trades take place <br>- Bombay Stock Exchange (BSE) and
+           the National Stock Exchange (NSE). Apart from these two exchanges,
+           <br> there are some other regional stock exchanges like Bangalore Stock Exchange,
+           Madras Stock Exchange etc but these exchanges do not play a meaningful role anymore.
+          </p>
+<button class="btn btn-primary btn-lg">Details</button>
+
+<button class="btn btn-primary btn-lg">View More</button>
+
+    </div>
+    <div class="col-lg-6 col-mg-6">
+      <img src="../assets/img1">
+    </div>
+  </div>
+  </div>
+  <div>
+    <div  id="footer"class=footer> Copyright:@website</div>
+  </div>
 <router-outlet></router-outlet>
+  
 </body>
