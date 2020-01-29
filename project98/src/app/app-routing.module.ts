@@ -5,7 +5,8 @@ import { LoginComponent } from './login/login.component';
 import{ RegisterComponent}from './register/register.component';
 import{AboutusComponent}from './aboutus/aboutus.component';
 import{LogoutComponent}from './logout/logout.component';
-
+import{AdminComponent}from './admin/admin.component';
+import{UserComponent}from './user/user.component';
 
 const routes: Routes = [
   {path:'register',component:RegisterComponent} ,
@@ -13,7 +14,10 @@ const routes: Routes = [
  {path:'logout',component:LogoutComponent},
  {path:'',component:HomeComponent},
  {path:'aboutus',component:AboutusComponent},
- {path:'logout',component:LogoutComponent}
+ {path:'logout',component:LogoutComponent},
+ {path:'admin',component:AdminComponent},
+ {path:'user',component:UserComponent}
+ 
 ];
 
 @NgModule({

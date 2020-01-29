@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+h1{
+    color: blue;
+    padding: 6px;
+    
+    size: 800px;
+    text-align: center;
+    
+    
+    font-style:italic ;
+    
+    
+    
+            }
+            .topnav  {
+      background-color:blue;
+      
+      text-align: center;
+      
+      
+    }
+    img{
+        float: left;
+    }
+    marquee{
+        color:red;
+    }
