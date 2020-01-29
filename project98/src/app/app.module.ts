@@ -12,6 +12,11 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
+import { AdminImportdataComponent } from './admin-importdata/admin-importdata.component';
+import { ImportdataComponent } from './admin/importdata/importdata.component';
+import { ManagecompanyComponent } from './admin/managecompany/managecompany.component';
+import { ManageexchangeComponent } from './admin/manageexchange/manageexchange.component';
+import { UpdateioComponent } from './updateio/updateio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +27,11 @@ import { UserComponent } from './user/user.component';
     LogoutComponent,
     AdminComponent,
     UserComponent,
+    AdminImportdataComponent,
+    ImportdataComponent,
+    ManagecompanyComponent,
+    ManageexchangeComponent,
+    UpdateioComponent,
   
     //HttpClientModule
   ],
