@@ -14,6 +14,8 @@ import{HttpClientModule}from '@angular/common/http';
 import { RegisterComponent } from './user/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateUserComponent } from './user/update-user/update-user.component';
+import { PipeComponent } from './pipe/pipe/pipe.component';
+import { CustompipePipe } from './custompipe.pipe';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { UpdateUserComponent } from './user/update-user/update-user.component';
     LogoutComponent,
     UserComponent,
     RegisterComponent,
-    UpdateUserComponent
+    UpdateUserComponent,
+    PipeComponent,
+    CustompipePipe
     
     
   

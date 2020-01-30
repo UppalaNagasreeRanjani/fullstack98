@@ -1,0 +1,28 @@
+{
+    "users": [
+      {
+        "name": "nagasri",
+        "password":123455,
+        "conformpassword":12345,
+        "id": 56,
+         "email": "uppalanagasri98@gmail.com",
+        "phone": "657698"
+      },
+      {
+        "name": "sri",
+        "password":123455,
+        "conformpassword":12345,
+        "id": 87654, 
+        "email": "sadr@gmail.com",
+        "phone": "4345678"
+      },
+      {
+        "name": "chinni",
+        "password":123455,
+        "conformpassword":12345,
+        "id": 34567,
+        "email": "jhgfdfg@gmail.com",
+        "phone": "324567890"
+      }
+    ]
+  }

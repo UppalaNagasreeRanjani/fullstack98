@@ -16,7 +16,10 @@ RegistrationForm:FormGroup;
     this.RegistrationForm = new FormGroup({
       'username': new FormControl(''),
       'password': new FormControl(''),
-      'conformpassword':new FormControl('')
+      'conformpassword':new FormControl(''),
+      'id':new FormControl(''),
+      'email':new FormControl(''),
+      'phone':new FormControl('')
   });
 }
   onSubmit() {

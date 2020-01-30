@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Pipe } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LoginFormComponent } from './login-form/login-form.component';
@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { RegisterComponent } from './user/register/register.component';
 import { UpdateUserComponent } from './user/update-user/update-user.component';
+import { PipeComponent } from './pipe/pipe/pipe.component';
 
 
 const routes: Routes = [
@@ -16,8 +17,8 @@ const routes: Routes = [
  {path:'logout',component:LogoutComponent},
  {path:'',component:HomeComponent},
  {path:'user',component:UserComponent},
-//  {path:'update',component:UpdateUserComponent},
- {path:'update-user',component:UpdateUserComponent}
+ {path:'update-user',component:UpdateUserComponent},
+ {path:'pipe',component:PipeComponent}
  
  
 ];

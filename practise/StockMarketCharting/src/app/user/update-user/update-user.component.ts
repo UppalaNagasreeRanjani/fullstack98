@@ -29,7 +29,7 @@ this.updateUser.patchValue(user);
   }
  updateTheUser(user:User){
   this.serviceservice.updateUserInfo(this.updateUser.value).subscribe(user=>{   
-      this.router.navigate(['users']);
+      this.router.navigate(['user']);
    })
  }
 }
