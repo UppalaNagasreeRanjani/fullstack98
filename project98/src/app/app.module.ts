@@ -10,14 +10,14 @@ import { RegisterComponent } from './register/register.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
-import { UserComponent } from './user/user.component';
-import { ImportdataComponent } from './admin/importdata/importdata.component';
-import { ManagecompanyComponent } from './admin/managecompany/managecompany.component';
-import { ManageexchangeComponent } from './admin/manageexchange/manageexchange.component';
-import { UserlistComponent } from './register/userlist/userlist.component';
-import { UserupdateComponent } from './register/userupdate/userupdate.component';
-import { UpdateioComponent } from './admin/updateio/updateio.component';
-
+//import{UserComponent} from './user/user.component';
+import{ImportdataComponent}from './admin/importdata/importdata.component';
+import{ManagecompanyComponent}from'./admin/managecompany/managecompany.component';
+import{ManageexchangeComponent}from './admin/manageexchange/manageexchange.component';
+import{UpdateioComponent}from './admin/updateio/updateio.component';
+  import { from } from 'rxjs';
+  import{UserlistComponent}from './register/userlist/userlist.component';
+  import{UserupdateComponent}from './register/userupdate/userupdate.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,23 +27,22 @@ import { UpdateioComponent } from './admin/updateio/updateio.component';
     AboutusComponent,
     LogoutComponent,
     AdminComponent,
-    UserComponent,
+    UpdateioComponent,
     ImportdataComponent,
     ManagecompanyComponent,
     ManageexchangeComponent,
     UserlistComponent,
-    UserupdateComponent,
-    UpdateioComponent,
-    HttpClientModule
+    UserupdateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule,
-    ReactiveFormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

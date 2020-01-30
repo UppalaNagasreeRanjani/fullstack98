@@ -8,6 +8,7 @@ import { ServiceService } from '../service.service';
  styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  
 registerUser:FormGroup;
   constructor(private formBuilder:FormBuilder,private service:ServiceService) { }
 

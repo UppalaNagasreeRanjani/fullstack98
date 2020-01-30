@@ -31,11 +31,7 @@ import { CustompipePipe } from './custompipe.pipe';
     UpdateUserComponent,
     PipeComponent,
     CustompipePipe
-    
-    
-  
-
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

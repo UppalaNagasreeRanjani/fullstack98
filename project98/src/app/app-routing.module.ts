@@ -17,7 +17,7 @@ import { UserupdateComponent } from './register/userupdate/userupdate.component'
  {path:'logout',component:LogoutComponent},
  {path:'aboutus',component:AboutusComponent},
  {path:'admin',component:AdminComponent},
- {path:'user',component:UserComponent},
+ //{path:'user',component:UserComponent},
  {path:'userlist',component:UserlistComponent},
  {path:'userupdate',component:UserupdateComponent}
 ];
