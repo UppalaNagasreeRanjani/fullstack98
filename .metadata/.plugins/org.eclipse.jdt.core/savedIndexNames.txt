@@ -1,17 +1,29 @@
-<<<<<<< HEAD
 INDEX VERSION 1.131+C:\Users\Lenovo\Desktop\fullstack98\.metadata\.plugins\org.eclipse.jdt.core
-3125595194.index
-783724549.index
-1487841048.index
-789344348.index
-1034209821.index
-2158823684.index
-1498778604.index
-1353826651.index
-1414767474.index
+358992952.index
+997061011.index
+1294426044.index
+2426283249.index
 3158595016.index
+1688587194.index
+3296651112.index
+2158823684.index
+783724549.index
+3125595194.index
+615986667.index
+2756573339.index
+2684368748.index
+1954145737.index
+793198406.index
+300339462.index
+1498778604.index
 3763813967.index
-=======
-INDEX VERSION 1.131+C:\Users\Dell\Desktop\fullstack98\.metadata\.plugins\org.eclipse.jdt.core
-3139662683.index
->>>>>>> 4e1d57dbbbabc150f6b63409278884dbcf5709ab
+3616383511.index
+1034209821.index
+2463366868.index
+1789282804.index
+2272688778.index
+3413629339.index
+3630859006.index
+789344348.index
+101135542.index
+143935117.index
