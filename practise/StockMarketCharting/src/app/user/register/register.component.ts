@@ -23,7 +23,7 @@ registerUser:FormGroup;
   }
  
 addUser(){
-this.service.saveUser(this.registerUser.value).subscribe(data=>
+this.service.saveUser(this.registerUser.value,).subscribe(data=>
 {
 console.log("data inserted succuessfully");
 });
