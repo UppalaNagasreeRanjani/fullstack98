@@ -37,6 +37,14 @@ public class UserController {
 		transaction.commit();
 		session.close();
 
+		
+		boolean status=userDAO.isValidUser("saikrishna","123456");
+		if(status) {
+			System.out.println("valid user");
+		}
+		else {
+			System.out.println("invalid user");
+		}
 	}
 
 }

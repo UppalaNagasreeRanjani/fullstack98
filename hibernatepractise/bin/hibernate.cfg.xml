@@ -14,5 +14,6 @@
         <mapping resource="User.hbm.xml"/>
         <mapping resource="Company.hbm.xml"/>
         <mapping  class="com.cts.training.model.StockExchange"/>
+        <mapping class="Employee.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

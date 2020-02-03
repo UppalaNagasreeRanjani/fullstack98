@@ -8,6 +8,8 @@
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\BackEnd"/>
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\hibernatepractise"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\HibernateDemo"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

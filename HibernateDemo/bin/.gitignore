@@ -1,4 +1,2 @@
 /com/
-/Company.xml
-/Company.hbm.xml
-/hibernate.cfg2.xml
+/Employee.hbm.xml
