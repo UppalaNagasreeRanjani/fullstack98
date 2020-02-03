@@ -14,11 +14,14 @@
         <mapping  class="com.cts.training.model.Register"/>
         <mapping  class="com.cts.training.model.Company"/>
         <mapping  class="com.cts.training.model.StockExchange"/>
+<<<<<<< HEAD
         
 <mapping class="com.cts.training.models.Ipo"/>
 <mapping class="com.cts.training.models.sector"/>
 <mapping class="com.cts.training.models.ContractEmployee"/>
         
       
+=======
+>>>>>>> a989096df1d0e7357435777c29455996cbf612bc
     </session-factory>
 </hibernate-configuration>

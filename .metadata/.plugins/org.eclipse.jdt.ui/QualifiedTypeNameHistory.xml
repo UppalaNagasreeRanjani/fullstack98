@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="com.sun.tools.javac.api.DiagnosticFormatter.Configuration"/>
     <fullyQualifiedTypeName name="com.cts.training.model.Company"/>
     <fullyQualifiedTypeName name="com.cts.training.model.StockExchange"/>
@@ -45,4 +46,18 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
     <fullyQualifiedTypeName name="org.hibernate.HibernateException"/>
+=======
+<fullyQualifiedTypeName name="com.cts.training.model.Company"/>
+<fullyQualifiedTypeName name="com.cts.training.model.StockExchange"/>
+<fullyQualifiedTypeName name="com.cts.training.dao.impl.StockExchangeDaoImpl"/>
+<fullyQualifiedTypeName name="com.cts.training.dao.StockExchangeDAO"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.sql.Time"/>
+<fullyQualifiedTypeName name="com.cts.training.model.Sector"/>
+<fullyQualifiedTypeName name="com.cts.training.dao.impl.SectorDAOimpl"/>
+<fullyQualifiedTypeName name="com.cts.training.dao.SectorDAO"/>
+<fullyQualifiedTypeName name="com.cts.training.model.Ipo"/>
+<fullyQualifiedTypeName name="com.cts.training.dao.impl.IpoDAOimpl"/>
+<fullyQualifiedTypeName name="com.cts.training.dao.IpoDAO"/>
+>>>>>>> a989096df1d0e7357435777c29455996cbf612bc
 </qualifiedTypeNameHistroy>

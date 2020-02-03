@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Lenovo\Desktop\fullstack98\Hibernate JARs"/>
+=======
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Dell\Desktop\fullstack98\Hibernate JARs"/>
+>>>>>>> a989096df1d0e7357435777c29455996cbf612bc
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -104,6 +108,7 @@
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 	</section>
+<<<<<<< HEAD
 	<section name="ClasspathContainerSelectionPage">
 		<item key="index" value="0"/>
 	</section>
@@ -114,6 +119,8 @@
 		<item key="DIALOG_HEIGHT" value="398"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
+=======
+>>>>>>> a989096df1d0e7357435777c29455996cbf612bc
 	<section name="SourceActionDialog.constructors">
 		<item key="VisibilityModifier" value="1"/>
 		<item key="FinalModifier" value="false"/>

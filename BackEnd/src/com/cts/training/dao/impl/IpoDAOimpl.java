@@ -2,13 +2,17 @@ package com.cts.training.dao.impl;
 
 import java.util.List;
 
+<<<<<<< HEAD
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
+=======
+>>>>>>> a989096df1d0e7357435777c29455996cbf612bc
 import com.cts.training.dao.IpoDAO;
 import com.cts.training.hibernate.HibernateUtil;
 import com.cts.training.model.Ipo;
 import com.cts.training.model.StockExchange;
+<<<<<<< HEAD
 import com.sun.xml.bind.annotation.OverrideAnnotationOf;
 //import com.sun.xml.bind.annotation.OverrideAnnotationOf;
 
@@ -18,6 +22,15 @@ public class IpoDAOimpl implements IpoDAO{
 	public boolean saveIpo(Ipo ipo) {
 	try {
 		Session session = sessionFactory.openSession();
+=======
+
+public class IpoDAOimpl implements IpoDAO{
+	SessionFactory sessionFactory = HibernateUtil.getSessionFactory()();
+	@Override
+	public boolean saveIpo(Ipo ipo) {
+	try {
+		session session = sessionFactory.openSession();
+>>>>>>> a989096df1d0e7357435777c29455996cbf612bc
 		Transaction tx = session.beginTransaction();
 		session.save(ipo);
 		tx.commit();
@@ -29,7 +42,11 @@ public class IpoDAOimpl implements IpoDAO{
 	}
 }
 
+<<<<<<< HEAD
 
+=======
+@Override
+>>>>>>> a989096df1d0e7357435777c29455996cbf612bc
 public boolean updateIpo(Ipo ipo) {
 	try {
 		Session session = sessionFactory.openSession();
@@ -46,7 +63,11 @@ public boolean updateIpo(Ipo ipo) {
 
 
 
+<<<<<<< HEAD
 //@Override
+=======
+@Override
+>>>>>>> a989096df1d0e7357435777c29455996cbf612bc
 public Ipo getIpoById(int id) {
 	try {
 		Session session = sessionFactory.openSession();
@@ -62,7 +83,11 @@ public Ipo getIpoById(int id) {
 	}
 }
 
+<<<<<<< HEAD
 //@Override
+=======
+@Override
+>>>>>>> a989096df1d0e7357435777c29455996cbf612bc
 public List<Ipo> getAllIpo() {
 	try {
 		Session session = sessionFactory.openSession();
