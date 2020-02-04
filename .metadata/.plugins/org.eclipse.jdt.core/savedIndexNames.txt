@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.131+C:\Users\Lenovo\Desktop\fullstack98\.metadata\.plugins\org.eclipse.jdt.core
 4079342146.index
 3125760843.index
@@ -57,3 +58,7 @@ INDEX VERSION 1.131+C:\Users\Lenovo\Desktop\fullstack98\.metadata\.plugins\org.e
 3554736399.index
 143935117.index
 2452448816.index
+=======
+INDEX VERSION 1.131+C:\Users\Dell\Desktop\fullstack98\.metadata\.plugins\org.eclipse.jdt.core
+2124278306.index
+>>>>>>> 0d43a34bd5f86266c8011edc46f96c0b760451a4
