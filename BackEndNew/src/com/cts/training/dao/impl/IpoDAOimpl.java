@@ -2,10 +2,12 @@ package com.cts.training.dao.impl;
 
 import java.util.List;
 
+//import javax.transaction.Transaction;
+
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-
+import org.hibernate.Transaction;
 import com.cts.training.dao.IpoDAO;
 import com.cts.training.hibernate.HibernateUtil;
 import com.cts.training.model.Ipo;
@@ -19,7 +21,7 @@ public class IpoDAOimpl implements IpoDAO{
 	public boolean saveIpo(Ipo ipo) {
 	try {
 		Session session = sessionFactory.openSession();
-		Transaction tx = session.beginTransaction();
+		org.hibernate.Transaction tx = session.beginTransaction();
 		session.save(ipo);
 		tx.commit();
 		session.close();

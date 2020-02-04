@@ -2,6 +2,11 @@ package com.cts.training.dao.impl;
 
 import java.util.List;
 
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
 import com.cts.training.dao.SectorDAO;
 import com.cts.training.hibernate.HibernateUtil;
 import com.cts.training.model.Sector;
@@ -12,7 +17,7 @@ public class SectorDAOimpl implements SectorDAO{
 	@Override
 	public boolean saveSector(Sector sector) {
 	try {
-		session session = sessionFactory.openSession();
+		Session session = sessionFactory.openSession();
 		Transaction tx = session.beginTransaction();
 		session.save(sector);
 		tx.commit();

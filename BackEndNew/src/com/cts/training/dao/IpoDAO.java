@@ -13,4 +13,6 @@ public interface IpoDAO {
    public Ipo getIpoById(int id);
 	public List<Ipo> getAllIpo();
 
+	
+
 }

@@ -1,5 +1,8 @@
 package com.cts.training.dao.impl;
-
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import java.util.List;
 
 import com.cts.training.dao.StockExchangeDAO;
@@ -7,12 +10,12 @@ import com.cts.training.hibernate.HibernateUtil;
 import com.cts.training.model.Register;
 import com.cts.training.model.StockExchange;
 
-public class StockExchangeDaoImpl implements StockExchangeDAO {
-	SessionFactory sessionFactory = HibernateUtil.getSessionFactory()();
+public  class StockExchangeDaoImpl  implements StockExchangeDAO {
+	SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 	@Override
 	public boolean saveStockExchange(StockExchange stock) {
 	try {
-		session session = sessionFactory.openSession();
+		Session session = sessionFactory.openSession();
 		Transaction tx = session.beginTransaction();
 		session.save(stock);
 		tx.commit();
@@ -70,5 +73,11 @@ public List<StockExchange> getAllStock() {
 		e.printStackTrace();
 		return null;
 	}
+}
+
+@Override
+public StockExchange getStockExchangetById(int id) {
+	// TODO Auto-generated method stub
+	return null;
 }
 }

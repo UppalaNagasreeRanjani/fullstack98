@@ -28,7 +28,7 @@ public class IpoController {
 		Ipo getipo=ipoDAO.getIpoById(104);
 		getipo.setEnabled(true);	
 		
-	boolean status = ipoDAO.updateStockExchange(ipo);
+	boolean status = ipoDAO.updateIpo(ipo);
 		if (status) {
 				System.out.println("Updated successfully");
 	}else {

@@ -20,7 +20,7 @@ public class StockMarketControler {
 	}
 		
 		// updating user
-		StockExchange getstock=stockDAO.getStockById(104);
+		StockExchange getstock=stockDAO.getStockExchangeById(104);
 		getstock.setEnabled(true);	
 		
 	boolean status = stockDAO.updateStockExchange(stock);

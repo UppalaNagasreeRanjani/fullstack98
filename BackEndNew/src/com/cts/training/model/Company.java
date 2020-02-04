@@ -4,12 +4,14 @@ import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 @Entity
 @Table(name= "Company")
 public class Company implements Serializable{
 
 	private static final long serialVersionUID = -6721988738619310856L;
 	@Id
+	
 	private int id;
 	private String companyname;
 	private String sector;

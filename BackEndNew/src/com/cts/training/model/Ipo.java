@@ -22,6 +22,7 @@ public class Ipo implements Serializable {
 	private String remarks;
 public Ipo() {
 	
+	
 }
 public Ipo(int id, String companyname, String stockexchange, int price, int noOfShares, Date date, Time time,
 		String remarks) {

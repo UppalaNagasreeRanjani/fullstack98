@@ -14,10 +14,8 @@
         <mapping  class="com.cts.training.model.Register"/>
         <mapping  class="com.cts.training.model.Company"/>
         <mapping  class="com.cts.training.model.StockExchange"/>
-        
-<mapping class="com.cts.training.models.Ipo"/>
-<mapping class="com.cts.training.models.sector"/>
-<mapping class="com.cts.training.models.ContractEmployee"/>
+         <mapping class="com.cts.training.model.Ipo"/>
+       <mapping class="com.cts.training.model.Sector"/>
         
       
     </session-factory>
