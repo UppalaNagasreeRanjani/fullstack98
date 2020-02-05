@@ -2,20 +2,23 @@ package com.cts.training.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.PreparedStatement;
+
 public class LoginServlet extends HttpServlet   {
 	public static boolean validate(String user,String pass){
 		boolean status=false;
 		try{
-		Class.forName("com.mysql.jdbc.Driver");
-		Connection con=DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/cts","root","admin");
-		PreparedStatement ps=con.prepareStatement(
-		"select * from register where email=? and password=?");
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/cts","root","admin");
+			PreparedStatement ps=con.prepareStatement("select * from example where email=? and password=?");
 		ps.setString(1,user);
 		ps.setString(2,pass);
 		ResultSet rs=ps.executeQuery();
