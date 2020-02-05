@@ -48,11 +48,13 @@ public class Helloservlet extends HttpServlet
 		
 			
 			out.println("id is"+id+"Username is "+ user + " \n<br>PassWord is " + pass+"\n<br>reEnteredPassword is "+repass+"Mail id is" +email+"Phone number is"+phone);
-			RequestDispatcher rd=request.getRequestDispatcher("login.html");
-			rd.forward(request, response);
+			
 			statement.cancel();
 			conn.close();
-			
+			RequestDispatcher rd=request.getRequestDispatcher("login.html");
+			rd.forward(request, response);
+			 out.println("<html><body><b>Successfully Inserted"
+	                    + "</b></body></html>"); 
 	} catch (NumberFormatException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
