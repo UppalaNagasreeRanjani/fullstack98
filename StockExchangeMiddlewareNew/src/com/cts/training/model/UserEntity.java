@@ -1,21 +1,16 @@
-package com.cts.trainin.model;
+package com.cts.training.model;
 
-public class UserEntity {
+import java.io.Serializable;
+
+public class UserEntity implements Serializable {
+	private static final long serialVersionUID = -571421626497450456L;
 	private int id;
 	private String name;
 	private String password;
 	private String email;
 	private long phone;
 	private boolean enabled;
-
-	public boolean isEnabled() {
-		return enabled;
-	}
-
-	public void setEnabled(boolean enabled) {
-		this.enabled = enabled;
-	}
-
+	private AddressEntity address;
 	public UserEntity() {
 
 	}
@@ -68,6 +63,19 @@ public class UserEntity {
 
 	public void setPhone(long phone) {
 		this.phone = phone;
+	}
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+	public AddressEntity getAddress() {
+		return address;
+	}
+	public void setAddress(AddressEntity address) {
+		this.address = address;
 	}
 
 	@Override

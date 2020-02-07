@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="address1" class="com.cts.training.model.AddressEntity"   c:houseNo="C-123/A" c:street="Street Number 6" c:city="New Delhi"   c:state="Delhi" /> 
+ <bean id="address2" class="com.soprasteria.training.model.Address"   c:houseNo="A-1234" c:street="Street Number 1" c:city="Noida"   c:state="Uttar Pradesh" /> 
+ 
+ <bean id="person" class="com.cts.training.model.AddressEntity">   <property name="list">    <list>     <value>List 1. Java</value>     <value>List 2. Python</value>    </list>   </property>   <property name="set">    <set>     <value>Set 1. IT Employees</value>     <value>Set 2. Test Engineers</value>    </set>   </property> 
+4 
+ 
+  <property name="map"> 
+     <map>   
+    <entry key="0" value="Map(Emails)" />  
+     <entry key="1" value="Map(Account Numbers)" /> 
+        </map>   </property>   <property name="properties">   
+         <props>  
+            <prop key="propKeyA">This is Property-1</prop>  
+               <prop key="propKeyB">This is Property-2</prop> 
+                  </props>   </property>   <property name="addressList">   
+                   <list>     <ref bean="address1" />     <ref bean="address2" />  
+                     </list>  
+                      </property>
+                        </bean> 
+
+</beans>

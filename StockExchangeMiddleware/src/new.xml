@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id="ICHD" class="com.cts.training.model.CustomerEntity">
+    <property name="id" value="101"></property>
+    <property name="name" value="tanu"></property>
+    <property name="accdetails">
+      <bean name="accdetails" class="com.cts.training.model.AccountEntity">
+       <property name="accNumber" value="ICHD2222"></property>
+       <property name="acctype" value="saving"></property>
+       <property name="branch" value="hyderabad"></property>
+       <property name="fund">
+         <bean name="fund" class="com.cts.training.model.FundEntity">
+           <property name="fromAccount" value="ICHD3333"></property>
+           <property name="toAccount" value="ICHD2222"></property>
+           <property name="amount" value="12222222"></property>
+         </bean>
+       </property>
+      </bean>
+   </property>
+   </bean>
+
+</beans>

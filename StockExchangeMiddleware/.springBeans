@@ -8,6 +8,9 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/example.xml</config>
+		<config>src/nameSpace.xml</config>
+		<config>src/new.xml</config>
+		<config>src/bean.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
