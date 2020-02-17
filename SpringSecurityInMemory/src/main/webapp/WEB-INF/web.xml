@@ -4,13 +4,11 @@
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
 		<display-name>Spring Security InMemory</display-name>
-
-		<!-- <filter>
+ 		<filter>
 			<filter-name>
 				springSecurityFilterChain</filter-name>
 			<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 		</filter>
-
 		<filter-mapping>
 			<filter-name>springSecurityFilterChain</filter-name>
 			<url-pattern>/*</url-pattern>
@@ -21,7 +19,6 @@
 				org.springframework.web.servlet.DispatcherServlet
 			</servlet-class>
 		</servlet>
-
 		<servlet-mapping>
 			<servlet-name>dispatcher</servlet-name>
 			<url-pattern>/</url-pattern>
@@ -37,5 +34,5 @@
 				/WEB-INF/dispatcher-servlet.xml,
 				/WEB-INF/spring-security.xml
 			</param-value>
-		</context-param> -->
+		</context-param> 
 </web-app>

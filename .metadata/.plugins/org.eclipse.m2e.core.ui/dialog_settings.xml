@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Lenovo\Desktop"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\BackEndNew\src\com\cts\training\dao\IpoDAO.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,14 +27,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.cts.training"/>
+			<item value="com.cts.training.middle"/>
 			<item value="com.cts.training.middle.controller"/>
 			<item value="com.cts.training.middle.StockExchange"/>
 			<item value="com.cts.training.middle.StockExchangeChartingWeb"/>
 		</list>
 		<list key="groupId">
+			<item value="com.cts.training"/>
 			<item value="com.cts.training.middle"/>
 		</list>
 		<list key="artifactId">
+			<item value="Group2Frontend"/>
+			<item value="Group2"/>
 			<item value="StockExchangeCharting"/>
 			<item value="StockExchange"/>
 			<item value="StockExchangeChartingWeb"/>
