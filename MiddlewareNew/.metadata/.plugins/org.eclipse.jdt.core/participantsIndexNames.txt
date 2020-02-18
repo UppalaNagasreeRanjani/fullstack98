@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\Lenovo\Desktop\MiddlewareNew\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1976676756.index
+\StockExchangeChartingWeb\src\main\java
+C:\Users\Lenovo\Desktop\MiddlewareNew\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\344845670.index
+\StockExchangeWeb\src
+C:\Users\Lenovo\Desktop\MiddlewareNew\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2639763328.index
+\StockExchangeChartingWeb\src\main\java
+C:\Users\Lenovo\Desktop\MiddlewareNew\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3158595016.index
+\inheritence\src
+C:\Users\Lenovo\Desktop\MiddlewareNew\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1317874936.index
+\WebSecurity\src
+C:\Users\Lenovo\Desktop\MiddlewareNew\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1181236963.index
+\WebSecure\src

@@ -6,7 +6,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { DisplayUsersComponent } from './display-users/display-users.component';
-//import { AddCompanyComponent } from './add-company/add-company.component';
+import { AddCompanyComponent  } from './import-data/add-company/add-company.component';
 import { AddStockExchangeComponent } from './add-stock-exchange/add-stock-exchange.component';
 import { DeactivateCompanyComponent } from './deactivate-company/deactivate-company.component';
 import { ResetComponent } from './reset/reset.component';
@@ -27,6 +27,8 @@ import { DisplayIposComponent } from './display-ipos/display-ipos.component';
 import { AuthGuard } from './auth.guard';
 import { ViewIposComponent } from './view-ipos/view-ipos.component';
 
+//import { AddCompanyComponent } from './import-data/add-company/add-company.component';
+
 
 const routes: Routes = [
   {path:'login',component:LoginFormComponent},
@@ -34,7 +36,7 @@ const routes: Routes = [
   {path:'admin',component:AdminPageComponent,canActivate:[AuthGuard]},
   {path:'user',component:UserPageComponent,canActivate:[AuthGuard]},
   {path:'display-users',component:DisplayUsersComponent,canActivate:[AuthGuard]},
-  {path:'add-company' ,component: AddCompanyComponent,canActivate:[AuthGuard]},
+  {path:'add-company' ,component: AddCompanyComponent ,canActivate:[AuthGuard]},
   {path:'add-stock-exchange' ,component: AddStockExchangeComponent,canActivate:[AuthGuard]},
   {path:'add-ipo' ,component: AddIpoComponent,canActivate:[AuthGuard]},
   {path:'deactivate-company' ,component: DeactivateCompanyComponent,canActivate:[AuthGuard]},

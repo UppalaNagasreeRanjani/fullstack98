@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head> security</head>
+<body> 
+<a href="admin.jsp"></a>
+<a href="hr.jsp"></a>
+<a href="employee.jsp"></a>
+<a href="manager.jsp"></a>
+<a href="index.jsp"></a>
+</body>
+</html>

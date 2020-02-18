@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { StockExchangeService } from 'src/services/stock-exchange.service';
+import { StockExchangeService } from 'src/app/services/stock-exchange.service';
 import { Router } from '@angular/router';
 
 @Component({

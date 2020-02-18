@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { IPOService } from 'src/services/ipo.service';
+import { IPOService } from 'src/app/services/ipo.service';
 import { Router } from '@angular/router';
-import { IPO } from 'src/models/ipo';
+import { IPO } from 'src/app/models/ipo';
 
 @Component({ 
   selector: 'app-view-ipos',

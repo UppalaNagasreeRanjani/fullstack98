@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { StockExchangeService } from 'src/services/stock-exchange.service';
-import { StockExchange } from 'src/models/stock-exchange';
+import { StockExchangeService } from 'src/app/services/stock-exchange.service';
+import { StockExchange } from 'src/app/models/stock-exchange';
 
 @Component({
   selector: 'app-update-stock-exchange',

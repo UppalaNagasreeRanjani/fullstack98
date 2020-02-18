@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CompanyService } from 'src/services/company.service';
+import { CompanyService } from 'src/app/services/company.service';
 import { Router } from '@angular/router';
-import { Company } from 'src/models/company';
-import { StockExchangeService } from 'src/services/stock-exchange.service';
-import { StockExchange } from 'src/models/stock-exchange';
+import { Company } from 'src/app/models/company';
+import { StockExchangeService } from 'src/app/services/stock-exchange.service';
+import { StockExchange } from 'src/app/models/stock-exchange';
 
 @Component({
   selector: 'app-manage-stock-exchange',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
-import { IPOService } from 'src/services/ipo.service';
+import { IPOService } from 'src/app/services/ipo.service';
 import { Router } from '@angular/router';
 
 @Component({
