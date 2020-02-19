@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Lenovo\Desktop\fullstack98\guruBackend"/>
 		<item value="C:\Users\Lenovo\Desktop\fullstack98\StockExchangeChartingWeb"/>
 		<item value="C:\Users\Lenovo\Desktop\gurufront end"/>
 		<item value="C:\Users\Lenovo\Desktop\StockExchangeBackend"/>
@@ -17,11 +18,15 @@
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\springrestservice"/>
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\gurufront end"/>
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\guruBackend"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\BackEnd"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\hibernatepractise"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\HibernateDemo"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\StockExchangeChartingWeb\src\main\webapp\WEB-INF\views\users.jsp"/>
 			<item value=""/>
 		</list>
 	</section>
