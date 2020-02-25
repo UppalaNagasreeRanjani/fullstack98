@@ -6,11 +6,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
 @Table(name = "register")
-@XmlRootElement(name = "userlist")
+@XmlRootElement(name = "reg")
 public class Register implements Serializable {
 
 	
@@ -22,7 +23,9 @@ public class Register implements Serializable {
 	private String email;
 	private long phonenumber;
 	private String password;
-	private String conformpassword;
+	@Transient
+	private String regStatus;
+	private String active="no";
 	
 	
 	public Register() {
@@ -31,14 +34,14 @@ public class Register implements Serializable {
 	}
 
 
-	public Register(int id, String username,  String email, long phonenumber, String password,String conformpassword) {
+	public Register(int id, String username, String email, long phonenumber, String password) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.email = email;
 		this.phonenumber = phonenumber;
 		this.password = password;
-		this.conformpassword = conformpassword;
+		
 	}
 
 
@@ -59,16 +62,6 @@ public class Register implements Serializable {
 
 	public void setUsername(String username) {
 		this.username = username;
-	}
-
-
-	public String getConformpassword() {
-		return conformpassword;
-	}
-
-
-	public void setConformpassword(String conformpassword) {
-		this.conformpassword = conformpassword;
 	}
 
 
@@ -102,13 +95,32 @@ public class Register implements Serializable {
 	}
 
 
-	@Override
-	public String toString() {
-		return "Register [id=" + id + ", username=" + username +  ", email="
-				+ email + ", phonenumber=" + phonenumber + ", password=" + password + "\", conformpassword=\" + conformpassword ]";
+	public String getRegStatus() {
+		return regStatus;
 	}
 
-	
+
+	public void setRegStatus(String regStatus) {
+		this.regStatus = regStatus;
+	}
+
+
+	public String getActive() {
+		return active;
+	}
+
+
+	public void setActive(String active) {
+		this.active = active;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Register [id=" + id + ", username=" + username + ", email=" + email + ", phonenumber=" + phonenumber
+				+ ", password=" + password + "]";
+	}
+
 
 	
 
