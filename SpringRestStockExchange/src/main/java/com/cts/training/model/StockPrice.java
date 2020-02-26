@@ -19,18 +19,17 @@ public class StockPrice {
 	private int company_id;
 	private String stock_exchange;
 	private double current_price;
-	private double total_shares;
 	private LocalDateTime opendatetime;
 	public StockPrice() {
 		
 	}
-	public StockPrice(int company_id, String stock_exchange, double current_price, double total_shares,
+	public StockPrice(int company_id, String stock_exchange, double current_price, 
 			LocalDateTime opendatetime) {
 		super();
 		this.company_id = company_id;
 		this.stock_exchange = stock_exchange;
 		this.current_price = current_price;
-		this.total_shares = total_shares;
+		
 		this.opendatetime = opendatetime;
 	}
 	public int getCompany_id() {
@@ -51,12 +50,7 @@ public class StockPrice {
 	public void setCurrent_price(double current_price) {
 		this.current_price = current_price;
 	}
-	public double getTotal_shares() {
-		return total_shares;
-	}
-	public void setTotal_shares(double total_shares) {
-		this.total_shares = total_shares;
-	}
+	
 	public LocalDateTime getOpendatetime() {
 		return opendatetime;
 	}
@@ -66,7 +60,7 @@ public class StockPrice {
 	@Override
 	public String toString() {
 		return "StockPrice [company_id=" + company_id + ", stock_exchange=" + stock_exchange + ", current_price="
-				+ current_price + ", total_shares=" + total_shares + ", opendatetime=" + opendatetime + "]";
+				+ current_price + ", opendatetime=" + opendatetime + "]";
 	}
 	
 }
