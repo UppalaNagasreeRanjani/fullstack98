@@ -18,6 +18,7 @@
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\ProfileDemo"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\SpringRestStockExchange"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\SpringBootLayeredapp"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\restproj"/>

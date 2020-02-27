@@ -26,8 +26,6 @@ public class Register implements Serializable {
 	@Transient
 	private String regStatus;
 	private String active="no";
-	
-	
 	public Register() {
 		
 		
@@ -120,12 +118,4 @@ public class Register implements Serializable {
 		return "Register [id=" + id + ", username=" + username + ", email=" + email + ", phonenumber=" + phonenumber
 				+ ", password=" + password + "]";
 	}
-
-
-	
-
-
-	
-	
-
 }

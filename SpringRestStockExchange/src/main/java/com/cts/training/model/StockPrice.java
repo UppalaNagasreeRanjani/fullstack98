@@ -16,27 +16,27 @@ public class StockPrice {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue
-	private int company_id;
+	private int id;
 	private String stock_exchange;
 	private double current_price;
 	private LocalDateTime opendatetime;
 	public StockPrice() {
 		
 	}
-	public StockPrice(int company_id, String stock_exchange, double current_price, 
+	public StockPrice(int id, String stock_exchange, double current_price, 
 			LocalDateTime opendatetime) {
 		super();
-		this.company_id = company_id;
+		this.id = id;
 		this.stock_exchange = stock_exchange;
 		this.current_price = current_price;
 		
 		this.opendatetime = opendatetime;
 	}
-	public int getCompany_id() {
-		return company_id;
+	public int getid() {
+		return id;
 	}
-	public void setCompany_id(int company_id) {
-		this.company_id = company_id;
+	public void setCompany_id(int id) {
+		this.id = id;
 	}
 	public String getStock_exchange() {
 		return stock_exchange;
@@ -59,7 +59,7 @@ public class StockPrice {
 	}
 	@Override
 	public String toString() {
-		return "StockPrice [company_id=" + company_id + ", stock_exchange=" + stock_exchange + ", current_price="
+		return "StockPrice [id=" + id + ", stock_exchange=" + stock_exchange + ", current_price="
 				+ current_price + ", opendatetime=" + opendatetime + "]";
 	}
 	

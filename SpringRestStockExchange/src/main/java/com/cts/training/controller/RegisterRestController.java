@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.cts.training.model.Register;
 import com.cts.training.repo.RegisterRepo;
 @CrossOrigin(origins="*")
@@ -46,7 +47,7 @@ public class RegisterRestController {
 		try {
 			SimpleMailMessage sm=new SimpleMailMessage();
 			sm.setFrom("uppalaranjani98@gmail.com");
-			sm.setTo("uppalaranjani98@gmail.com");
+			sm.setTo(us.getEmail());
 			sm.setSubject("testing mail");
 			sm.setText("Account created click on <a href='http://localhost:4200/activate?"+us.getEmail()+"'>Click</a>");
 			jms.send(sm);
@@ -59,6 +60,19 @@ public class RegisterRestController {
 		return us;
 	}
 	
+	@PutMapping(value="/registerall/activate")
+	public String activateUser(@RequestBody String e) {
+		String temp = e.split(":")[1];
+		String email=temp.split("\"")[1];
+		Register register = ur.findByEmail(email);
+		if(register.getActive().equals("no")) {
+			register.setActive("yes");
+			ur.save(register);
+			return "{\"result\":\"1\"}";
+		}
+		else
+		return "{\"result\":\"0\"}";
+	}
 	@DeleteMapping("/deleteregister/{id}")
 	public void delete(@PathVariable int id) {
 		ur.deleteById(id);
