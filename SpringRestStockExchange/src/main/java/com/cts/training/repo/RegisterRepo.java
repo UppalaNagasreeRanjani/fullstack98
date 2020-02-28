@@ -7,3 +7,4 @@ import com.cts.training.model.Register;
 public interface RegisterRepo extends JpaRepository<Register, Integer>  {
 	Register findByEmail(String email);
 }
+
