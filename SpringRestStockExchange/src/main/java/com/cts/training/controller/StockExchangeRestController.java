@@ -12,14 +12,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cts.training.dao.StockExchangeDAO;
 import com.cts.training.model.StockExchange;
-
-import com.cts.training.repo.StockExchangeRepo;
 @CrossOrigin(origins="*")
 @RestController
 public class StockExchangeRestController {
 	@Autowired
-	StockExchangeRepo ur;
+	StockExchangeDAO ur;
 	@GetMapping("/stockexchangeall")
 	public List<StockExchange> findAll() {
 		return ur.findAll();

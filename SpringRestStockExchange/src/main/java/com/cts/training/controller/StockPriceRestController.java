@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cts.training.model.IPO;
+import com.cts.training.dao.InitialPublicOfferingDAO;
+import com.cts.training.dao.StockPriceDAO;
+import com.cts.training.model.InitialPublicOffering;
 import com.cts.training.model.StockPrice;
-import com.cts.training.repo.IPORepo;
-import com.cts.training.repo.StockPriceRepo;
 
 @CrossOrigin(origins="*")
 @RestController
 public class StockPriceRestController {
 	@Autowired
-	StockPriceRepo ur;
+	StockPriceDAO ur;
 	@GetMapping("/stockpriceall")
 	public List<StockPrice> findAll() {
 		return ur.findAll();

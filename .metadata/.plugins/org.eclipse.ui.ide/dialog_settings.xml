@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Lenovo\Desktop\fullstack98\StockExchange-service"/>
+		<item value="C:\Users\Lenovo\Desktop\fullstack98\InitialPublicOffering-service"/>
+		<item value="C:\Users\Lenovo\Desktop\fullstack98\company-service"/>
+		<item value="C:\Users\Lenovo\Desktop\fullstack98\user-service"/>
 		<item value="C:\Users\Lenovo\Desktop\fullstack98\guruBackend"/>
 		<item value="C:\Users\Lenovo\Desktop\fullstack98\StockExchangeChartingWeb"/>
 		<item value="C:\Users\Lenovo\Desktop\gurufront end"/>
