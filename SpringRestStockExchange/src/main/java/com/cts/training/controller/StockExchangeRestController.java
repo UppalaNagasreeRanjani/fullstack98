@@ -18,33 +18,52 @@ import com.cts.training.model.StockExchange;
 @RestController
 public class StockExchangeRestController {
 	@Autowired
-	StockExchangeDAO ur;
-	@GetMapping("/stockexchangeall")
-	public List<StockExchange> findAll() {
-		return ur.findAll();
-	}
-	
+StockExchangeDAO stockexchangeDAO;
+	@Autowired
+	StockExchangeService stockexchangeService;
 	@GetMapping("/stockexchangeid/{id}")
-	public StockExchange findOne(@PathVariable int id) {
-		Optional<StockExchange> usr = ur.findById(id);
-		StockExchange us = usr.get();
-		return us;
+	public ResponseEntity<?> getStockExchangeById(@PathVariable("id") int id) {
+		try {
+			StockExchange stockexchange=stockexchangeService.getCompanyById(id);
+			return new ResponseEntity<Company>(stockexchange,HttpStatus.FOUND);
+		}catch(NoClassDefFoundError e){
+			return new ResponseEntity<String>("No such stock found",HttpStatus.NOT_FOUND);
+		}
 	}
-	
-	@PostMapping("/stockexchangeall")
-	public StockExchange save(@RequestBody StockExchange usr) {
-		StockExchange us = ur.save(usr);
-		return us;
+	@GetMapping("/stockexchange")
+	public ResponseEntity<?>getallstockexchanges() {
+		List<StockExchange> list = stockexchangeService.getAllStockExchanges();
+		if(list.size()>0)
+		{
+			return new ResponseEntity<List<Stockexchange>>(list , HttpStatus.OK);
+		}
+		else
+		{
+			return new ResponseEntity<String>("No stockexchanges found",HttpStatus.NOT_FOUND);
+		}
 	}
-	
-	@DeleteMapping("/deletestockexchange/{id}")
-	public void delete(@PathVariable int id) {
-		ur.deleteById(id);
+	@PostMapping("/stockexchange")
+	public ResponseEntity<StockExchange> save(@RequestBody StockExchange stockexchange){
+		stockexchangeService.insert(stockexchange);
+		return new ResponseEntity<StockExchange>(stockexchange,HttpStatus.CREATED);
 	}
-	
-	@PutMapping("/updatestockexchange")
-	public StockExchange update(@RequestBody StockExchange usr) {
-		StockExchange us = ur.save(usr);
-		return us;
+	@DeleteMapping("/stockexchange/{id}")
+	public ResponseEntity<StockExchange> delete(@PathVariable int id){
+		stockexchangeService.delete(id);
+		return new ResponseEntity<StockExchange>(HttpStatus.MOVED_PERMANENTLY);
 	}
-}
+	@PutMapping("/stockexchange")
+	public ResponseEntity<StockExchange> update(@RequestBody StockExchange stockexchange){
+		stockexchangeService.updateStockExchange(stockexchange);
+		return new ResponseEntity<StockExchange>(stockexchange,HttpStatus.OK);
+	}
+//	@RequestMapping(value="/reg",method= RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
+//	public String reg() {
+//		return "{\"reg\":\"ok\"}";
+//	}
+//	@RequestMapping(value="/activate",method= RequestMethod.PUT)
+//	public ResponseEntity<String> activate(@RequestBody String email){
+//		companyService.activate(email);
+//		return new ResponseEntity<String>(email,HttpStatus.CREATED);
+//	}
+//}

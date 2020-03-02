@@ -32,7 +32,7 @@ public class CompanyRestController {
 	@Autowired
 	CompanyService companyService;
 	@GetMapping("/companyid/{id}")
-	public ResponseEntity<?> getElementById(@PathVariable("id") int id) {
+	public ResponseEntity<?> getCompanyById(@PathVariable("id") int id) {
 		try {
 			Company company=companyService.getCompanyById(id);
 			return new ResponseEntity<Company>(company,HttpStatus.FOUND);
@@ -49,33 +49,33 @@ public class CompanyRestController {
 		}
 		else
 		{
-			return new ResponseEntity<String>("No users found",HttpStatus.NOT_FOUND);
+			return new ResponseEntity<String>("No companies found",HttpStatus.NOT_FOUND);
 		}
 	}
 	@PostMapping("/company")
-	public ResponseEntity<RegisterDTO> save(@RequestBody RegisterDTO user){
+	public ResponseEntity<Company> save(@RequestBody RegisterDTO company){
 		companyService.insert(company);
-		return new ResponseEntity<RegisterDTO>(user,HttpStatus.CREATED);
+		return new ResponseEntity<RegisterDTO>(company,HttpStatus.CREATED);
 	}
-	@DeleteMapping("/register/{id}")
+	@DeleteMapping("/company/{id}")
 	public ResponseEntity<RegisterDTO> delete(@PathVariable int id){
 		companyService.delete(id);
-		return new ResponseEntity<RegisterDTO>(HttpStatus.MOVED_PERMANENTLY);
+		return new ResponseEntity<Company>(HttpStatus.MOVED_PERMANENTLY);
 	}
-	@PutMapping("/register")
-	public ResponseEntity<RegisterDTO> update(@RequestBody RegisterDTO user){
-		companyService.updateCompany(user);
-		return new ResponseEntity<RegisterDTO>(user,HttpStatus.OK);
+	@PutMapping("/company")
+	public ResponseEntity<Company> update(@RequestBody Company company){
+		companyService.updateCompany(company);
+		return new ResponseEntity<Company>(company,HttpStatus.OK);
 	}
-	@RequestMapping(value="/reg",method= RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-	public String reg() {
-		return "{\"reg\":\"ok\"}";
-	}
-	@RequestMapping(value="/activate",method= RequestMethod.PUT)
-	public ResponseEntity<String> activate(@RequestBody String email){
-		companyService.activate(email);
-		return new ResponseEntity<String>(email,HttpStatus.CREATED);
-	}
-
+//	@RequestMapping(value="/reg",method= RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
+//	public String reg() {
+//		return "{\"reg\":\"ok\"}";
+//	}
+//	@RequestMapping(value="/activate",method= RequestMethod.PUT)
+//	public ResponseEntity<String> activate(@RequestBody String email){
+//		companyService.activate(email);
+//		return new ResponseEntity<String>(email,HttpStatus.CREATED);
+//	}
+//
 
 }
