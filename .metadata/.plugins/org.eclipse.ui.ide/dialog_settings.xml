@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Lenovo\Desktop\fullstack98\StockPrice-service"/>
+		<item value="C:\Users\Lenovo\Desktop\fullstack98\netflix-eureka-naming-server"/>
 		<item value="C:\Users\User\Desktop\fullstack98\SpringRestStockExchange"/>
 		<item value="C:\Users\Lenovo\Desktop\fullstack98\StockExchange-service"/>
 		<item value="C:\Users\Lenovo\Desktop\fullstack98\InitialPublicOffering-service"/>
@@ -23,8 +25,13 @@
 		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\Lenovo\Desktop\fullstack98\ProfileDemo"/>
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\InitialPublicOffering-service"/>
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\StockExchange-service"/>
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\company-service"/>
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\user-service"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\SpringRestStockExchange"/>
+			<item value="C:\Users\Lenovo\Desktop\fullstack98"/>
+			<item value="C:\Users\Lenovo\Desktop\fullstack98\ProfileDemo"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\SpringBootLayeredapp"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\restproj"/>
 			<item value="C:\Users\Lenovo\Desktop\fullstack98\SpringBootSecurity"/>
@@ -54,5 +61,12 @@
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="433"/>
+		<item key="DIALOG_Y_ORIGIN" value="96"/>
+		<item key="DIALOG_WIDTH" value="500"/>
+		<item key="DIALOG_HEIGHT" value="402"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
 	</section>
 </section>

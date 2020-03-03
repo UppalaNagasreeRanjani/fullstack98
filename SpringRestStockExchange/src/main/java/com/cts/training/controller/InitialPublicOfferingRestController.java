@@ -23,30 +23,30 @@ import com.cts.training.model.InitialPublicOffering;
 		@Autowired
 		InitialPublicOfferingDAO ur;
 		
-		@GetMapping("/ipoall")
+		@GetMapping("/initialpublicofferingall")
 		public List<InitialPublicOffering> findAll() {
 			return ur.findAll();
 		}
 		
-		@GetMapping("/ipoid/{id}")
+		@GetMapping("/initialpublicofferingid/{id}")
 		public InitialPublicOffering findOne(@PathVariable int id) {
 			Optional<InitialPublicOffering> usr = ur.findById(id);
 			InitialPublicOffering us = usr.get();
 			return us;
 		}
 		
-		@PostMapping("/ipoall")
+		@PostMapping("/initialpublicofferingall")
 		public InitialPublicOffering save(@RequestBody InitialPublicOffering usr) {
 			InitialPublicOffering us = ur.save(usr);
 			return us;
 		}
 		
-		@DeleteMapping("/deleteipo/{id}")
+		@DeleteMapping("/deleteinitialpublicoffering/{id}")
 		public void delete(@PathVariable int id) {
 			ur.deleteById(id);
 		}
 		
-		@PutMapping("/updateipo")
+		@PutMapping("/updateinitialpublicoffering")
 		public InitialPublicOffering update(@RequestBody InitialPublicOffering usr) {
 			InitialPublicOffering us = ur.save(usr);
 			return us;

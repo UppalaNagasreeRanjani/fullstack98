@@ -1,9 +1,12 @@
 package com.cts.training.controller;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,17 +17,23 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.cts.training.dao.RegisterDAO;
 import com.cts.training.dto.RegisterDTO;
+import com.cts.training.model.Register;
 import com.cts.training.service.RegisterService;
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="*")
 @RestController
 public class RegisterRestController {
 	@Autowired
-	RegisterDAO registerDAO;
+	RegisterDAO registerRepo;
 	@Autowired
 	RegisterService registerService;
+	@Autowired
+	JavaMailSender jms;
+	@Autowired
+	RegisterDAO registerDAO;
+	@Autowired
+	RegisterService registerService1;
 	@GetMapping("/registerid/{id}")
 	public ResponseEntity<?> getElementById(@PathVariable("id") int id) {
 		try {
